@@ -13,6 +13,77 @@ Generated JWT tokens on successful login and validated them for every secured re
 
 Applied role-based authorization (Admin, Librarian, User) at API level.
 
+Project Structure (Spring Boot – Library Management System)
+
+Library_Management_System
+│
+├── src/main/java/com/library
+│   │
+│   ├── controller
+│   │   ├── AuthController.java
+│   │   ├── UserController.java
+│   │   ├── BookController.java
+│   │   ├── BorrowController.java
+│   │   ├── FineController.java
+│   │   └── ReservationController.java
+│   │
+│   ├── service
+│   │   ├── AuthService.java
+│   │   ├── UserService.java
+│   │   ├── BookService.java
+│   │   ├── BorrowService.java
+│   │   ├── FineService.java
+│   │   └── ReservationService.java
+│   │
+│   ├── service/impl
+│   │   ├── AuthServiceImpl.java
+│   │   ├── UserServiceImpl.java
+│   │   ├── BookServiceImpl.java
+│   │   ├── BorrowServiceImpl.java
+│   │   ├── FineServiceImpl.java
+│   │   └── ReservationServiceImpl.java
+│   │
+│   ├── repository
+│   │   ├── UserRepository.java
+│   │   ├── BookRepository.java
+│   │   ├── BorrowRepository.java
+│   │   ├── FineRepository.java
+│   │   └── ReservationRepository.java
+│   │
+│   ├── model (or entity)
+│   │   ├── User.java
+│   │   ├── Book.java
+│   │   ├── Librarian.java
+│   │   ├── Borrow.java
+│   │   ├── Fine.java
+│   │   └── Reservation.java
+│   │
+│   ├── dto
+│   │   ├── LoginRequest.java
+│   │   ├── SignupRequest.java
+│   │   ├── BookRequest.java
+│   │   └── ApiResponse.java
+│   │
+│   ├── security
+│   │   ├── JwtUtil.java
+│   │   ├── JwtFilter.java
+│   │   ├── CustomUserDetailsService.java
+│   │   └── SecurityConfig.java
+│   │
+│   ├── exception
+│   │   ├── ResourceNotFoundException.java
+│   │   ├── UnauthorizedException.java
+│   │   └── GlobalExceptionHandler.java
+│   │
+│   └── LibraryManagementApplication.java
+│
+├── src/main/resources
+│   ├── application.properties
+│   └── data.sql (optional)
+│
+├── pom.xml
+└── README.md
+
 👤 User Management
 
 User registration and login.

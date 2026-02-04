@@ -14,7 +14,7 @@ Generated JWT tokens on successful login and validated them for every secured re
 Applied role-based authorization (Admin, Librarian, User) at API level.
 
 Project Structure (Spring Boot – Library Management System)
-
+```
 Library_Management_System
 │
 ├── src/main/java/com/library
@@ -83,139 +83,100 @@ Library_Management_System
 │
 ├── pom.xml
 └── README.md
+```
 
 👤 User Management
 
-User registration and login.
-
-View and update user profile.
-
-Role-based access for Users, Librarians, and Admin.
+* User registration and login.
+* View and update user profile.
+* Role-based access for Users, Librarians, and Admin.
 
 📖 Book Management
 
-Add new books (Admin/Librarian).
-
-Update book details.
-
-Delete books.
-
-Search books by:
-
-Title
-
-Author
-
-Category
-
-ISBN
+* Add new books (Admin/Librarian).
+* Update book details.
+* Delete books.
+* Search books by:
+   1.Title
+   2.Author
+   3.Category
+   4.ISBN
 
 🔄 Borrow & Return Management
-
-Users can borrow available books.
-
-Track borrowed books with due dates.
-
-Return books and update availability.
-
-Prevent borrowing if book is not available.
+*Users can borrow available books.
+*Track borrowed books with due dates.
+*Return books and update availability.
+*Prevent borrowing if book is not available.
 
 ⏳ Fine Management
-
-Automatically calculate fine for late returns.
-
-View fine details for each user.
-
-Admin can manage fine rules.
+*Automatically calculate fine for late returns.
+*View fine details for each user.
+*Admin can manage fine rules.
 
 📌 Reservation System
-
-Users can reserve books if currently unavailable.
-
-Notify users when reserved book becomes available.
+*Users can reserve books if currently unavailable.
+*Notify users when reserved book becomes available.
+*Maintain reservation queue.
 
 🧑‍💼 Librarian Management
-
-Add / update / remove librarians.
-
-Librarians manage daily library operations.
-
-View borrowing history.
+* Add / update / remove librarians.
+* Librarians manage daily library operations.
+* View borrowing history.
 
 💾 Database Design
 
 Relational database using MySQL / PostgreSQL
-
-Entities:
-
-User
-
-Book
-
-Librarian
-
-Borrow
-
-Return
-
-Fine
-
-Reservation
+* Entities:
+     1.User
+     2.Book
+     3.Librarian
+     4.Borrow
+     5.Return
+     6.Fine
+     7.Reservation
 
 🛠️ Tech Stack
-Technology	Used
-Backend	Spring Boot
-Security	Spring Security + JWT
-Database	MySQL / PostgreSQL
-ORM	Hibernate / JPA
-Build Tool	Maven
-API	RESTful APIs
-Testing	Postman
+```
+| Technology | Used                  |
+| ---------- | --------------------- |
+| Backend    | Spring Boot           |
+| Security   | Spring Security + JWT |
+| Database   | MySQL / PostgreSQL    |
+| ORM        | Hibernate / JPA       |
+| Build Tool | Maven                 |
+| API        | RESTful APIs          |
+| Testing    | Postman               |
+```
 🚀 How to Run the Project
 
-Clone the repository:
+1.Clone the repository:
+git clone: https://github.com/akashakash7401-cmy/Library_managnment_System2/edit/main/README.md
 
-git clone https://github.com/your-username/Library_managnment_System2.git
-
-
-Import into Eclipse / IntelliJ as Maven project.
-
-Configure application.properties:
+2.Import into Eclipse / IntelliJ as Maven project.
+3.Configure application.properties:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/library_db
 spring.datasource.username=root
 spring.datasource.password=yourpassword
 
-
-Run the application:
+4.Run the application:
 
 Run as → Spring Boot App
 
 
 Test APIs using Postman.
 
-🎯 Project Highlights (For Resume)
+🎯 Project Highlights 
 
-Developed a real-time Library Management System using Spring Boot.
-
-Implemented JWT authentication & role-based access control.
-
-Designed REST APIs for book, user, borrow, fine, and reservation modules.
-
-Followed layered architecture (Controller, Service, Repository).
-
-Used Hibernate JPA for database operations.
+1.Developed a real-time Library Management System using Spring Boot.
+2.Implemented JWT authentication & role-based access control.
+3.Designed REST APIs for book, user, borrow, fine, and reservation modules.
+4.Followed layered architecture (Controller, Service, Repository).
+5.Used Hibernate JPA for database operations.
 
 📌 Future Enhancements
-
-Email notifications.
-
-Frontend using React/Angular.
-
-PDF reports.
-
-Admin dashboard.
-
-Portfolio
-
-Recruiters view 💼
+* Email notifications.
+*Frontend using React/Angular.
+*PDF reports.
+*Admin dashboard.
+*Portfolio
